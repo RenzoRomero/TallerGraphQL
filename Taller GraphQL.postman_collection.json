@@ -1,0 +1,316 @@
+{
+  "info": {
+    "_postman_id": "aa7733b8-bb51-4adc-8814-d9339fbc1f11",
+    "name": "Taller GraphQL",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "2212554"
+  },
+  "item": [
+    {
+      "name": "Product-API",
+      "item": [
+        {
+          "name": "Get Products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/api/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InNNMV95QXhWOEdWNHlOLUI2ajJ4em1pazVBbyIsImtpZCI6InNNMV95QXhWOEdWNHlOLUI2ajJ4em1pazVBbyJ9.eyJhdWQiOiJhcGk6Ly81NDNlMWU1Ni1kZWQ0LTQ1ODYtYTlhNy00ZTU2MDQ1OGVjY2QiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC85ZTBjMmNkZS1iMmEzLTQyMGMtOTI1YS1lZTU2ODZhODAwYmUvIiwiaWF0IjoxNzcxNTUzMzE0LCJuYmYiOjE3NzE1NTMzMTQsImV4cCI6MTc3MTU1NzIxNCwiYWlvIjoiazJaZ1lPaHpWblc4dXR2Z3g5dE9wamtySHhhSUF3QT0iLCJhcHBpZCI6ImY0YjY1YTgzLWQ2ODAtNDJhZC05ZmUwLTc5ZDU0NDU3ODBiYSIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzllMGMyY2RlLWIyYTMtNDIwYy05MjVhLWVlNTY4NmE4MDBiZS8iLCJvaWQiOiJhZGQ2MDkwMi1lNjNlLTQ1MDUtOTllZS1lMGIzMmY3MDU4ZTUiLCJyaCI6IjEuQVVZQTNpd01ucU95REVLU1d1NVdocWdBdmxZZVBsVFUzb1pGcWFkT1ZnUlk3TTBBQUFCR0FBLiIsInN1YiI6ImFkZDYwOTAyLWU2M2UtNDUwNS05OWVlLWUwYjMyZjcwNThlNSIsInRpZCI6IjllMGMyY2RlLWIyYTMtNDIwYy05MjVhLWVlNTY4NmE4MDBiZSIsInV0aSI6IldUQjlsV2p0UzBhLXBQNDM3TkZ1QUEiLCJ2ZXIiOiIxLjAiLCJ4bXNfZnRkIjoiSFJVMkNPUEw4Q3ZpSmx6YWVzT0NBZ0dqaFhlaHBiY0IyX0l1c3ZVU2hKa0JkWE4zWlhOME15MWtjMjF6In0.V_KPxVsdsiheUO1P7D-UqyGqw2-ZpEgVpsUDqN_k_qjpWh2IKIL5YQsrg1zODtWgRMCaKRSRHeOZr4hPDU5DSVPKegU1IwEbGS6-egyOMF3GNHOBqya8YMvGI6rMn6dwBSFZCwBCsj-IAUqHtBGT7zd-04I5OBPK38F_mYZqecYPzH8mMp3eQpzwAqzCgBLNT-AM83SpMox5w1SusVhhXew68mqvmQeZ-vqGfxaOXmhkwEX1kwKvj_n5tTAsgFceccMoFmu8etv2VIMtvfOAr4sYznwWTZx72b_VvIsKhq7FYlKaQpZM54HRvzeag6CQCzgCByTMG_S1KzOC17wwwA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/api/products/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "products",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post Product",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InNNMV95QXhWOEdWNHlOLUI2ajJ4em1pazVBbyIsImtpZCI6InNNMV95QXhWOEdWNHlOLUI2ajJ4em1pazVBbyJ9.eyJhdWQiOiJhcGk6Ly81NDNlMWU1Ni1kZWQ0LTQ1ODYtYTlhNy00ZTU2MDQ1OGVjY2QiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC85ZTBjMmNkZS1iMmEzLTQyMGMtOTI1YS1lZTU2ODZhODAwYmUvIiwiaWF0IjoxNzcxNTUxNTY0LCJuYmYiOjE3NzE1NTE1NjQsImV4cCI6MTc3MTU1NTQ2NCwiYWlvIjoiazJaZ1lCQjFpbU1xV0tZMktYVHU3U1dkWHRML0FBPT0iLCJhcHBpZCI6ImY0YjY1YTgzLWQ2ODAtNDJhZC05ZmUwLTc5ZDU0NDU3ODBiYSIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzllMGMyY2RlLWIyYTMtNDIwYy05MjVhLWVlNTY4NmE4MDBiZS8iLCJvaWQiOiJhZGQ2MDkwMi1lNjNlLTQ1MDUtOTllZS1lMGIzMmY3MDU4ZTUiLCJyaCI6IjEuQVVZQTNpd01ucU95REVLU1d1NVdocWdBdmxZZVBsVFUzb1pGcWFkT1ZnUlk3TTBBQUFCR0FBLiIsInN1YiI6ImFkZDYwOTAyLWU2M2UtNDUwNS05OWVlLWUwYjMyZjcwNThlNSIsInRpZCI6IjllMGMyY2RlLWIyYTMtNDIwYy05MjVhLWVlNTY4NmE4MDBiZSIsInV0aSI6InJQblYxTVNRRzBhZUlubVZGYXM0QUEiLCJ2ZXIiOiIxLjAiLCJ4bXNfZnRkIjoiZEdWTG9vUXJzWE9WTFg0bVhVMFFLbzdKbVBIUFU2c0lRbHFOV3hiT2VmVUJkWE4zWlhOME15MWtjMjF6In0.DOZdNxvrJoFokGMbjPnF7NNNlndii8z8S3IqWk7TP2JpEYkKx1HBgRV1K6ARxmiBgWnW2vB-rQNp3flDuq9gH5AQuuV1KuiDIkevTulDNY-s2erriH4XIZ93hFaZOZ06ujfx44mL7FZv83-E4TqYMI8lfb_LXhLPffAaDdRqhzJ7qYPtPePDM2XQ8cKn1inCKQQ9SO0pRf_cxzGqkDejRcItfPEufuJRpMqEFQEdwqqptYSabJp5rbPgn_PAD7vlk5ni8A9KwKTblXpwsJhYE_1SpKHAPXdggSFt4p2_vJaCmNmzzXVAwlH43xOKDUsvhz6cDCy3_ZFsczzqSrRypg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Chicles\",\n    \"price\": 0.15,\n    \"stock\": 20\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/api/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Put Product",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Chocolates\",\n    \"price\": 10,\n    \"stock\": \"1\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/api/products/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "products",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Product",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/api/products/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "products",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Products GraphQL",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "{ getAllProducts { id name price stock } }",
+                "variables": ""
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/graphql",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "graphql"
+              ]
+            },
+            "description": "Generated from cURL: curl -X POST http://localhost:8080/graphql \\\n-H \"Content-Type: application/json\" \\\n-d '{\"query\": \"{ getAllProducts { id nombre precio stock } }\"}'\n"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product GraphQL",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "{ getProductById(id: 1) { id name price stock } }",
+                "variables": ""
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/graphql",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "graphql"
+              ]
+            },
+            "description": "Generated from cURL: curl -X POST http://localhost:8080/graphql \\\n-H \"Content-Type: application/json\" \\\n-d '{\"query\": \"{ getProductById(id: 1) { id nombre precio stock } }\"}'\n"
+          },
+          "response": []
+        },
+        {
+          "name": "Post Product GraphQL",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation { createProduct(input: { name: \"Waffer\", price: 1.20, stock: 50 }) { id name price stock } }",
+                "variables": ""
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/graphql",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "graphql"
+              ]
+            },
+            "description": "Generated from cURL: curl -X POST http://localhost:8080/graphql \\\n-H \"Content-Type: application/json\" \\\n-d '{\"query\": \"mutation { createProduct(input: { nombre: \\\"Producto A\\\", precio: 12.5, stock: 100 }) { id nombre precio stock } }\"}'\n"
+          },
+          "response": []
+        },
+        {
+          "name": "Put Product GraphQL",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation { updateProduct(id: 1, input: { name: \"Gaseosa\", price: 2.40, stock: 15 }) { id name price stock } }",
+                "variables": ""
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/graphql",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "graphql"
+              ]
+            },
+            "description": "Generated from cURL: curl -X POST http://localhost:8080/graphql \\\n-H \"Content-Type: application/json\" \\\n-d '{\n  \"query\": \"mutation { updateProduct(id: 1, input: { nombre: \\\"Producto Nuevo\\\", precio: 50.0, stock: 20 }) { id nombre precio stock estado } }\"\n}'\n"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Product GraphQL",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation { deleteProduct(id: 1) }",
+                "variables": ""
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/graphql",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "graphql"
+              ]
+            },
+            "description": "Generated from cURL: curl -X POST http://localhost:8080/graphql \\\n-H \"Content-Type: application/json\" \\\n-d '{\n  \"query\": \"mutation { deleteProduct(id: 1) }\"\n}'\n"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
