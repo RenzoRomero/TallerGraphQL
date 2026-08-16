@@ -36,6 +36,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductResponse> getAll() {
+        System.err.println("ProductServiceImpl.getAll");
         return productRepository.findAll()
                 .stream()
                 .map(ProductMapper::toResponse)
